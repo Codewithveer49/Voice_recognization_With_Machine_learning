@@ -1,11 +1,11 @@
 
-# 🗣️ Voice-Based Speaker Recognition + 🔊 Text-to-Speech System
+#  Voice-Based Speaker Recognition + 🔊 Text-to-Speech System
 
 This project demonstrates how to use **Text-to-Speech (TTS)** and **Voice Recognition** using classical machine learning (SVM). It generates voice samples using `pyttsx3`, extracts features using `librosa`, and builds a speaker classifier using **Support Vector Machines**. It also contains a snippet for an **Arduino-based smart traffic system** using ultrasonic sensors.
 
 ---
 
-## 🔧 Features
+##  Features
 
 - ✅ Convert text into speech (.wav files)
 - ✅ Use two different TTS voices (male/female)
@@ -16,7 +16,7 @@ This project demonstrates how to use **Text-to-Speech (TTS)** and **Voice Recogn
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 voice-recognition/
@@ -32,7 +32,7 @@ voice-recognition/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. 🔧 Install Requirements
 
@@ -44,7 +44,7 @@ pip install pyttsx3 librosa soundfile scikit-learn numpy
 
 ---
 
-### 2. 📦 Generate Voices
+### 2.  Generate Voices
 
 In the code:
 ```python
@@ -56,7 +56,7 @@ This creates `.wav` files using two different voice IDs.
 
 ---
 
-### 3. 🎙️ Extract Features & Train Classifier
+### 3.  Extract Features & Train Classifier
 
 We extract **MFCCs** (Mel-frequency cepstral coefficients) from audio, and train a **Support Vector Machine** to distinguish speakers.
 
@@ -68,7 +68,7 @@ clf.fit(X_train, y_train)
 
 ---
 
-### 4. 🔍 Predict Speaker from New Voice
+### 4.  Predict Speaker from New Voice
 
 ```python
 generate_speech("This is a test phrase...", "voices/test_speaker1.wav", voice_1)
@@ -80,7 +80,7 @@ predictions = clf.predict(test_mfccs)
 
 ---
 
-## 🔊 Speak Any Text in Real-Time
+##  Speak Any Text in Real-Time
 
 ```python
 speak("How are you buddy, what's going on?", voice_1)
@@ -89,29 +89,13 @@ speak("How are you buddy, what's going on?", voice_1)
 This speaks the given sentence in real time.
 
 ---
+##  License
 
-## 🔁 Bonus: Arduino Traffic Light Controller (Snippet)
-
-Embedded at the end of the code is a smart traffic control system using ultrasonic sensors to detect vehicles and prioritize traffic lanes.
-
-### 👇 Key Concepts:
-- Distance sensors on 4 lanes
-- LED signals (Red, Yellow, Green) per lane
-- Priority given to the lane where the car arrived first
-
-📟 **Microcontroller Used:** Arduino  
-💡 **Sensors Used:** Ultrasonic Distance Sensors  
-💡 **Outputs:** Red, Yellow, Green LEDs per lane
+This project is open source and free to use under the **VIT license**.
 
 ---
 
-## 📜 License
-
-This project is open source and free to use under the **MIT License**.
-
----
-
-## 🤝 Acknowledgements
+##  Acknowledgements
 
 - [`pyttsx3`](https://pypi.org/project/pyttsx3/)
 - [`librosa`](https://librosa.org/)
@@ -122,5 +106,5 @@ This project is open source and free to use under the **MIT License**.
 
 ## 🙌 Author
 
-Made with ❤️ by **[VeerDhawal]**  
+Made with ❤️ by **VeerDhawal**  
 > Feel free to fork, contribute, or suggest improvements!
