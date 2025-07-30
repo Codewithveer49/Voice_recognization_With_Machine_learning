@@ -1,5 +1,5 @@
 
-#  Voice-Based Speaker Recognition + 🔊 Text-to-Speech System
+#  Voice-Based Speaker Recognition +  Text-to-Speech System
 
 This project demonstrates how to use **Text-to-Speech (TTS)** and **Voice Recognition** using classical machine learning (SVM). It generates voice samples using `pyttsx3`, extracts features using `librosa`, and builds a speaker classifier using **Support Vector Machines**. It also contains a snippet for an **Arduino-based smart traffic system** using ultrasonic sensors.
 
@@ -7,12 +7,12 @@ This project demonstrates how to use **Text-to-Speech (TTS)** and **Voice Recogn
 
 ##  Features
 
-- ✅ Convert text into speech (.wav files)
-- ✅ Use two different TTS voices (male/female)
-- ✅ Extract MFCC audio features using  `librosa`
-- ✅ Train a classifier to identify which speaker is talking
-- ✅ Test unknown voice to predict the speaker
-- ✅ Bonus: Arduino traffic light controller using ultrasonic sensors
+-  Convert text into speech (.wav files)
+-  Use two different TTS voices (male/female)
+-  Extract MFCC audio features using  `librosa`
+-  Train a classifier to identify which speaker is talking
+-  Test unknown voice to predict the speaker
+-  Bonus: Arduino traffic light controller using ultrasonic sensors
 
 ---
 
